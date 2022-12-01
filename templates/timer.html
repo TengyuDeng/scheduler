@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+</head>
+<body>
+    <!-- {% if name %}
+        <h1>Hello {{ name }}!</h1>
+    {% else %}
+        <h1>Hello Anonymous!</h1>
+    {% endif %} -->
+    <div id="taskName">
+        <label for="task_select">The current task is:</label>
+        <select id="task_select">
+            <option value="WORK">WORK</option>
+            <option value="MEAL">MEAL</option>
+            <option value="GAME">GAME</option>
+            <option value="DVD">DVD</option>
+            <option value="SHOPPING">SHOPPING</option>
+            <option value="SLEEP">SLEEP</option>
+        </select>
+    </div>
+    <div id="timerActions">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="clear">Clear</button>
+    </div>
+    
+    <div hidden id="timer">
+        <h1 id="curTime">0:00:00</h1>
+    </div>
+
+    <div hidden id="sendActions">
+        <button id="send">Send</button>
+    </div>
+    
+    <script src="static/js/timer.js"></script>
+</body>
+</html>
